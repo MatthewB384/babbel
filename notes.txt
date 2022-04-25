@@ -1,0 +1,8 @@
+Let f(len, num) be the number of unique minimum length strings that contain
+all possible substrings of length len using num different characters.
+ - f(len, num) = num! ^ (num ^ (len - 1))
+
+All strings are cyclic - the last (len-1) characters are the same as the first
+(len-1) characters. This means you could take a character from the end of any
+minimum length string and move it to the start, and it would still be a valid
+string.
